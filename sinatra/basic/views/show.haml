@@ -1,0 +1,8 @@
+- if @post
+  .post
+    %h1= @post.title
+    #post-body
+      =@post.body
+- else
+  %h1 Sorry, we can't find that post!
+

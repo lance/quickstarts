@@ -1,0 +1,28 @@
+source :rubygems
+source 'http://rubygems.torquebox.org'
+
+
+gem 'bundler'
+gem "sinatra", "~> 1.3.1"
+
+gem 'haml', '~> 3.1'
+gem 'sass', '~> 3.1'
+
+gem 'dm-core', '~>1.1'
+gem 'dm-types', '~>1.1'
+gem 'dm-migrations', '~>1.1'
+gem 'dm-timestamps', '~>1.1'
+gem 'dm-serializer', '~>1.1'
+gem 'dm-sqlite-adapter'
+gem 'sqlite3'
+
+gem 'torquebox', '~> 2.0'
+
+group :test do
+  gem 'rspec', '~> 2.5.0', :require => 'spec'
+  gem 'torquespec', '~> 0.4.6'
+  gem 'capybara'
+  gem 'akephalos'
+end
+  
+

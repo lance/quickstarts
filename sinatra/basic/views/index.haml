@@ -1,0 +1,10 @@
+%h1 Welcome to TorqueBox!
+
+%h2= "You've written #{@posts.size} posts"
+%ul#posts
+  - @posts.each do |p|
+    .post{:id=>"post_#{p.id}"}
+      %li
+        %a{:href=>"/post/#{p.id}"}= p.title
+%a{:href=>'/post'} Write a new post
+

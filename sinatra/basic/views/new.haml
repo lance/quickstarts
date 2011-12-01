@@ -1,0 +1,15 @@
+%h1 Write a Post
+%form{:method=>:post, :action=>'/posts'}
+  %p.field
+    %label{:for=>:title} Title
+    %br
+    %input{:type=>:text, :name=>:title, :style=>'width:390px'}
+
+  %p.field
+    %label{:for=>:body} Body
+    %br
+    %textarea{:name=>:body, :cols=>80, :rows=>20}
+
+  %p.field
+    %input{:type=>:submit} 
+
